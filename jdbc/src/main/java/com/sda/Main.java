@@ -1,4 +1,6 @@
-package com.sda.jdbc;
+package com.sda;
+
+import com.sda.jdbc.MotherJdbcDao;
 
 public class Main {
     public static void main(String[] args) {

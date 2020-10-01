@@ -1,9 +1,18 @@
-package com.sda.jdbc;
+package hibernate;
 
+import javax.persistence.*;
+
+@Entity(name = "Mother")
+@Table(name = "mother")
 public class Mother {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
     private String name;
+    @Column(name = "age")
     private int age;
+    @Column(name = "address")
     private String address;
 
     public Mother(String name, int age, String address) {
